@@ -1,7 +1,7 @@
 Cross Browser / General Bug Fixing : Test
 ==================
 
-This application was build to test your bug fixing abilities. Its fairly simple,
+This application was built to test your bug fixing abilities. Its fairly simple,
 but reasonably reflects the type of problems you are likely to encounter when
 working on web applications for LogRhythm.
 

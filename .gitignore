@@ -1,0 +1,6 @@
+# packages
+node_modules/*
+App/public/js/*
+App/public/css/*
+App/public/vendor/*
+.DS_Store

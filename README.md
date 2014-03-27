@@ -1,7 +1,7 @@
 Cross Browser / General Bug Fixing : Test
 ==================
 
-This application was built to test your bug fixing abilities. Its fairly simple,
+This application was build to test your bug fixing abilities. Its fairly simple,
 but reasonably reflects the type of problems you are likely to encounter when
 working on web applications for LogRhythm.
 
@@ -90,5 +90,5 @@ with the intent expressed by the visual ui and the code as much as possible.
 ## Delivering your test application. 
 
 We ask that you do **NOT** post a public repository with your finished test. Instead
-please send us a .zip/.tar.gz/.tar/ect archive **INCLUDEING** your `.git` folder. 
+please send us a .zip/.tar.gz/.tar/ect archive **INCLUDING** your `.git` folder. 
 Please commit to git early and often just as you would on a real project.

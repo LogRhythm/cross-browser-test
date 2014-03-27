@@ -1,0 +1,76 @@
+<!DOCTYPE hmtl>
+<html ng-app="LogRhythm">
+  <head>
+    <title>LogRhythm Cross Browser Test</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="copyright" content="LogRhythm:<% new Date().getFullYear(); %>" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <script type="text/javascript" src="vendor/angular/angular.min.js"></script>
+    <script type="text/javascript" src="vendor/lodash/dist/lodash.js"></script>
+    <script type="text/javascript" src="vendor/KeyboardJS/keyboard.js"></script>
+    <script type="text/javascript" src="vendor/greensock/src/minified/TweenLite.min.js"></script>
+    <script type="text/javascript" src="vendor/greensock/src/minified/plugins/CSSPlugin.min.js"></script>
+    <script type="text/javascript" src="//fresheyeball.github.io/Clog/javascripts/Clog.js"></script>
+    <script type="text/javascript" src="js/module.js"></script>
+    <script type="text/javascript" src="js/directives/log.js"></script>
+    <script type="text/javascript" src="js/directives/saw.js"></script>
+    <script type="text/javascript" src="js/services/modal.js"></script>
+    <script type="text/javascript" src="js/controllers/gameCtrl.js"></script>
+  </head>
+  <body ng-controller="gameCtrl">
+    <div id="title">
+      <h1>Log Rhythm</h1>
+      <p> The rhythm... of the log</p>
+    </div>
+    <div id="stage">
+      <log
+       ng-repeat ="log in logs"
+       x         ="{{log.x}}"
+       y         ="{{log.y}}"
+       ></log>
+      <saw
+       ng-repeat ="saw in saws"
+       x         ="{{saw.x}}"
+       ></saw>
+    </div>
+    <div id="stats">
+      <div class="stat">Score : {{player.score}}</div>
+      <div class="stat">Lives : {{player.lives}}</div>
+    </div>
+    <script type="text/ng-template" id="/modal.html">
+      <div id="overlay"></div>
+      <div id="modal">
+        <div id="closeModal">X</div>
+        <div id="modalContent"></div>
+      </div>
+    </script>
+    <script type="text/ng-template" id="/log.html">
+      <div class="log">
+        <div class="top"></div>
+        <div class="bottom"></div>
+        <div class="middle"></div>
+      </div>
+    </script>
+    <script type="text/ng-template" id="/instructions.html">
+      <div>
+        To play press the 'qwerty' keys on your keyboard.
+        Buzz the logs as they pass the saw. The more log you Buzz
+        the better your score! Miss a log completely and you will
+        lose a life. Get a score of 750 to win!
+      </div>
+    </script>
+    <script type="text/ng-template" id="/gameover.html">
+      <div>
+        <h1>You Lose!</h1>
+      </div>
+    </script>
+    <script type="text/ng-template" id="/win.html">
+      <div>
+        <h1>You Win!</h1>
+      </div>
+    </script>
+
+  </body>
+</html>

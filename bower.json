@@ -1,0 +1,11 @@
+{
+  "name"         : "LRProgrammingTest",
+  "dependencies" : {
+    "angular"       : "~1.2.15",
+    "angular-mocks" : "~1.2.15",
+    "lodash"        : "~2.4.1",
+    "greensock"     : "~1.11.5",
+    "jquery"        : "~2.1.0",
+    "KeyboardJS"    : "~0.4.2"
+  }
+}

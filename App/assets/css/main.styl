@@ -1,0 +1,91 @@
+html 
+  background black
+  font-family "Comic Sans MS", cursive, sans-serif
+
+LOG_WIDTH = 87px
+
+#stage
+  background url('http://upload.wikimedia.org/wikipedia/commons/d/de/Redwood_National_Park,_fog_in_the_forest.jpg')
+  background-size 100% 100%
+  width LOG_WIDTH * 6
+  height @width
+  margin 0 auto
+  position relative
+  overflow hidden
+
+.stat
+  color white
+  size 60px
+  text-align center
+
+.log
+  height 150px
+  width LOG_WIDTH
+  position absolute
+  .top, .bottom, .middle
+    width LOG_WIDTH
+    position absolute
+    left 0
+  .top, .bottom 
+    background-repeat no-repeat
+  .top
+    background-image url('/images/logTop.png')
+    background-position top
+    height 134px
+    top 0
+    z-index 5
+  .middle
+    height calc(100% - 30px)
+    top 15px
+    background-repeat repeat-y
+    background url('/images/logMiddle.png')
+    z-index 3
+  .bottom 
+    bottom 0
+    height 133px
+    background-image url('/images/logBottom.png')
+    background-position bottom
+    z-index 4
+
+saw 
+  height LOG_WIDTH
+  width LOG_WIDTH
+  background-image url('/images/buzz.png')
+  background-position top left
+  background-size cover
+  position absolute
+  bottom ((LOG_WIDTH * -1) / 2)
+  &.buzz
+    background-position top right
+
+#overlay
+  background rgba(0,0,0,0.75)
+  position fixed 
+  z-index 8000
+  top 0 
+  left 0 
+  bottom 0 
+  right 0
+
+#overlay, #closeModal, .closer 
+  cursor pointer
+
+#modal
+  position fixed
+  top 50%
+  left 50%
+  height 300px
+  width @height
+  margin-top (@height / -2)
+  margin-left (@height / -2)
+  background white
+  z-index 9000
+
+#modalContent
+  padding 25px
+
+#title
+  color white
+  text-align center
+  h1, p
+    margin 5px 0

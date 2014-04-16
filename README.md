@@ -87,6 +87,8 @@ The application should function identically and all unit tests should be
 passing in all above browsers. The application should behave as expected and work
 with the intent expressed by the visual ui and the code as much as possible. 
 
+** DO NOT INCLUDE JQUERY ** jQuery may **ONLY** be used in unit tests.
+
 ## Delivering your test application. 
 
 We ask that you do **NOT** post a public repository with your finished test. Instead

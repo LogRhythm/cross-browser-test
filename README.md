@@ -19,7 +19,7 @@ This test uses the following key technologies:
 For Testing :
 
 - [Karma](http://karma-runner.github.io/0.12/index.html)
-- [Mocha](http://visionmedia.github.io/mocha/)
+- [Mocha](http://mochajs.org/)
 - [Chai](http://chaijs.com/)
 - [PhantomJS](http://phantomjs.org/)
 
